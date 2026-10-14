@@ -79,7 +79,7 @@ The GroundState Sans font files in source/ are the exact parent inputs. Their ha
 
 ## License and references
 
-Derived from GroundState Sans 0.2 and Inter.
+Derived from GroundState Sans 0.2 and [Inter by Rasmus Andersson and the Inter Project Authors](https://github.com/rsms/inter).
 Copyright (c) 2016 The Inter Project Authors (https://github.com/rsms/inter).
 Font software remains under SIL Open Font License 1.1. Keep OFL.txt with redistributed font files. This is an open-font derivative, not an exclusively proprietary font.
 

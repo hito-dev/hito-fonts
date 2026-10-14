@@ -40,6 +40,6 @@ The scripts use font inputs kept in `source/`. Rendering scripts currently refer
 
 Font software is licensed under **SIL Open Font License 1.1**; see [LICENSE](LICENSE). Retain each family's copyright and licence notices when redistributing:
 
-- Hito Sans derives from GroundState Sans and Inter. See [hito-sans/OFL.txt](hito-sans/OFL.txt).
+- Hito Sans derives from GroundState Sans and [Inter by Rasmus Andersson and the Inter Project Authors](https://github.com/rsms/inter). See [hito-sans/OFL.txt](hito-sans/OFL.txt).
 - Hito Mono derives from Geist Mono. See [hito-mono/OFL.txt](hito-mono/OFL.txt) and the upstream notices in `hito-mono/source/`.
 - Mono's original build/validation scripts and specimen have the separate MIT terms in [hito-mono/LICENSE-BUILD.txt](hito-mono/LICENSE-BUILD.txt). The root font licence does not replace that notice.
