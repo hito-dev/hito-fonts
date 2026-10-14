@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/vercel/geist-font",
+  "commit": "10dc7658f13c38a474cde201bb09a4617267545b",
+  "files": [
+    {
+      "path": "OFL.txt",
+      "sha256": "c683bfbcc7e087f5d37a54ef628f10387c451a83ddc459b151403a164ac46c90"
+    },
+    {
+      "path": "AUTHORS.txt",
+      "sha256": "65b32f3adaa39155c9958e165e8bd011e4b86ebdf9717a2863fc8294ace00e4a"
+    },
+    {
+      "path": "LICENSE.txt",
+      "sha256": "930853ee1daa68554d9e35c8a9175affb74f699fad9a5da6ee5ebe76379d9137"
+    },
+    {
+      "path": "fonts/GeistMono/variable/GeistMono[wght].ttf",
+      "sha256": "87c2aff9723544a9adaea19d92e42a33705c9723624801b6e0224c2206a6af0d"
+    }
+  ]
+}

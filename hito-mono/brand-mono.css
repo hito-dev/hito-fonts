@@ -1,0 +1,82 @@
+@font-face {
+  font-family: "GroundState Mono";
+  src: url("fonts/GroundStateMono-Regular.woff2") format("woff2"),
+       url("fonts/GroundStateMono-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GroundState Mono";
+  src: url("fonts/GroundStateMono-Medium.woff2") format("woff2"),
+       url("fonts/GroundStateMono-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GroundState Mono";
+  src: url("fonts/GroundStateMono-Semibold.woff2") format("woff2"),
+       url("fonts/GroundStateMono-Semibold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "GroundState Mono";
+  src: url("fonts/GroundStateMono-Bold.woff2") format("woff2"),
+       url("fonts/GroundStateMono-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hito Mono";
+  src: url("fonts/HitoMono-Regular.woff2") format("woff2"),
+       url("fonts/HitoMono-Regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hito Mono";
+  src: url("fonts/HitoMono-Medium.woff2") format("woff2"),
+       url("fonts/HitoMono-Medium.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hito Mono";
+  src: url("fonts/HitoMono-Semibold.woff2") format("woff2"),
+       url("fonts/HitoMono-Semibold.woff") format("woff");
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Hito Mono";
+  src: url("fonts/HitoMono-Bold.woff2") format("woff2"),
+       url("fonts/HitoMono-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+.groundstate-mono { font-family: "GroundState Mono", ui-monospace, monospace; }
+
+.hito-mono { font-family: "Hito Mono", ui-monospace, monospace; }
+
+.groundstate-mono, .hito-mono {
+  font-kerning: none;
+  font-variant-ligatures: none;
+  font-synthesis: none;
+  letter-spacing: normal;
+}

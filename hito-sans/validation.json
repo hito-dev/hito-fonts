@@ -1,0 +1,202 @@
+{
+  "family": "Hito Sans",
+  "version": "0.1",
+  "tests": [
+    {
+      "style": "Regular",
+      "format_checks": [
+        "TTF",
+        "WOFF",
+        "WOFF2"
+      ],
+      "glyph_count": 2934,
+      "latin_accent_cases": 497,
+      "pair_cases": 4624,
+      "new_pair_intersections": [],
+      "custom_kern_deltas": {
+        "Hi": -12,
+        "hi": -8,
+        "it": -12,
+        "to": -20,
+        "oK": -14,
+        "Ke": -14,
+        "ey": -8,
+        "ok": -8,
+        "ke": -10,
+        "oA": -14,
+        "AI": -14,
+        "o.": -10,
+        ".a": -16,
+        "oI": -8,
+        "Ho": -8,
+        "HI": 4,
+        "Il": 8,
+        "II": 6,
+        "KI": 4,
+        "Ay": -4
+      },
+      "above_accent_checks": 358,
+      "above_accent_min_gap": 51.0,
+      "new_invalid_contours": [],
+      "wordmarks": {
+        "hito.ai": {
+          "advance_units": 5843,
+          "collision_area": 0.0
+        },
+        "hitokey": {
+          "advance_units": 6918,
+          "collision_area": 0.0
+        },
+        "HitoKey": {
+          "advance_units": 7432,
+          "collision_area": 0.0
+        },
+        "HitoAI": {
+          "advance_units": 5862,
+          "collision_area": 0.0
+        },
+        "Hito": {
+          "advance_units": 3868,
+          "collision_area": 0.0
+        },
+        "hito": {
+          "advance_units": 3561,
+          "collision_area": 0.0
+        }
+      }
+    },
+    {
+      "style": "Medium",
+      "format_checks": [
+        "TTF",
+        "WOFF",
+        "WOFF2"
+      ],
+      "glyph_count": 2934,
+      "latin_accent_cases": 497,
+      "pair_cases": 4624,
+      "new_pair_intersections": [],
+      "custom_kern_deltas": {
+        "Hi": -12,
+        "hi": -8,
+        "it": -12,
+        "to": -20,
+        "oK": -14,
+        "Ke": -14,
+        "ey": -8,
+        "ok": -8,
+        "ke": -10,
+        "oA": -14,
+        "AI": -14,
+        "o.": -10,
+        ".a": -16,
+        "oI": -8,
+        "Ho": -8,
+        "HI": 4,
+        "Il": 8,
+        "II": 6,
+        "KI": 4,
+        "Ay": -4
+      },
+      "above_accent_checks": 356,
+      "above_accent_min_gap": 52.0,
+      "new_invalid_contours": [],
+      "wordmarks": {
+        "hito.ai": {
+          "advance_units": 5984,
+          "collision_area": 0.0
+        },
+        "hitokey": {
+          "advance_units": 7053,
+          "collision_area": 0.0
+        },
+        "HitoKey": {
+          "advance_units": 7560,
+          "collision_area": 0.0
+        },
+        "HitoAI": {
+          "advance_units": 5968,
+          "collision_area": 0.0
+        },
+        "Hito": {
+          "advance_units": 3927,
+          "collision_area": 0.0
+        },
+        "hito": {
+          "advance_units": 3638,
+          "collision_area": 0.0
+        }
+      }
+    },
+    {
+      "style": "Semibold",
+      "format_checks": [
+        "TTF",
+        "WOFF",
+        "WOFF2"
+      ],
+      "glyph_count": 2934,
+      "latin_accent_cases": 497,
+      "pair_cases": 4624,
+      "new_pair_intersections": [],
+      "custom_kern_deltas": {
+        "Hi": -12,
+        "hi": -8,
+        "it": -12,
+        "to": -20,
+        "oK": -14,
+        "Ke": -14,
+        "ey": -8,
+        "ok": -8,
+        "ke": -10,
+        "oA": -14,
+        "AI": -14,
+        "o.": -10,
+        ".a": -16,
+        "oI": -8,
+        "Ho": -8,
+        "HI": 4,
+        "Il": 8,
+        "II": 6,
+        "KI": 4,
+        "Ay": -4
+      },
+      "above_accent_checks": 356,
+      "above_accent_min_gap": 53.0,
+      "new_invalid_contours": [],
+      "wordmarks": {
+        "hito.ai": {
+          "advance_units": 6127,
+          "collision_area": 0.0
+        },
+        "hitokey": {
+          "advance_units": 7188,
+          "collision_area": 0.0
+        },
+        "HitoKey": {
+          "advance_units": 7686,
+          "collision_area": 0.0
+        },
+        "HitoAI": {
+          "advance_units": 6073,
+          "collision_area": 0.0
+        },
+        "Hito": {
+          "advance_units": 3985,
+          "collision_area": 0.0
+        },
+        "hito": {
+          "advance_units": 3716,
+          "collision_area": 0.0
+        }
+      }
+    }
+  ],
+  "failures": [],
+  "limits": [
+    "Sampled curves for approximate geometric checks",
+    "No native Windows/macOS browser validation",
+    "Three static weights at text optical size; no italics or variable masters",
+    "Geometric clearance and visual review do not prove accessibility or recognition"
+  ]
+}

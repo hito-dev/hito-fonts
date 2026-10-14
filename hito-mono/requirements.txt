@@ -1,0 +1,6 @@
+fonttools==4.61.1
+Brotli==1.2.0
+skia-pathops==0.9.2
+uharfbuzz==0.56.3
+Pillow==12.3.0
+shapely==2.2.0
