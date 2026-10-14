@@ -1,38 +1,5 @@
 [
   {
-    "family": "GroundState Mono",
-    "style": "Regular",
-    "weight": 400,
-    "edited_base_glyphs": [
-      "G",
-      "S",
-      "a",
-      "c",
-      "e",
-      "f",
-      "l",
-      "r",
-      "s",
-      "t"
-    ],
-    "preserved_other_script_glyphs": [
-      "uni0405",
-      "uni0430",
-      "uni0435",
-      "uni0441",
-      "uni0450",
-      "uni0451",
-      "uni0455"
-    ],
-    "advance_changes": 0,
-    "text_cell_units": 600,
-    "upm": 1000,
-    "coding_ligature_features_removed": [
-      "liga",
-      "ss11"
-    ]
-  },
-  {
     "family": "Hito Mono",
     "style": "Regular",
     "weight": 400,
@@ -76,39 +43,6 @@
       "uni0458",
       "uni04C0",
       "uni04CF"
-    ],
-    "advance_changes": 0,
-    "text_cell_units": 600,
-    "upm": 1000,
-    "coding_ligature_features_removed": [
-      "liga",
-      "ss11"
-    ]
-  },
-  {
-    "family": "GroundState Mono",
-    "style": "Medium",
-    "weight": 500,
-    "edited_base_glyphs": [
-      "G",
-      "S",
-      "a",
-      "c",
-      "e",
-      "f",
-      "l",
-      "r",
-      "s",
-      "t"
-    ],
-    "preserved_other_script_glyphs": [
-      "uni0405",
-      "uni0430",
-      "uni0435",
-      "uni0441",
-      "uni0450",
-      "uni0451",
-      "uni0455"
     ],
     "advance_changes": 0,
     "text_cell_units": 600,
@@ -172,39 +106,6 @@
     ]
   },
   {
-    "family": "GroundState Mono",
-    "style": "Semibold",
-    "weight": 600,
-    "edited_base_glyphs": [
-      "G",
-      "S",
-      "a",
-      "c",
-      "e",
-      "f",
-      "l",
-      "r",
-      "s",
-      "t"
-    ],
-    "preserved_other_script_glyphs": [
-      "uni0405",
-      "uni0430",
-      "uni0435",
-      "uni0441",
-      "uni0450",
-      "uni0451",
-      "uni0455"
-    ],
-    "advance_changes": 0,
-    "text_cell_units": 600,
-    "upm": 1000,
-    "coding_ligature_features_removed": [
-      "liga",
-      "ss11"
-    ]
-  },
-  {
     "family": "Hito Mono",
     "style": "Semibold",
     "weight": 600,
@@ -248,39 +149,6 @@
       "uni0458",
       "uni04C0",
       "uni04CF"
-    ],
-    "advance_changes": 0,
-    "text_cell_units": 600,
-    "upm": 1000,
-    "coding_ligature_features_removed": [
-      "liga",
-      "ss11"
-    ]
-  },
-  {
-    "family": "GroundState Mono",
-    "style": "Bold",
-    "weight": 700,
-    "edited_base_glyphs": [
-      "G",
-      "S",
-      "a",
-      "c",
-      "e",
-      "f",
-      "l",
-      "r",
-      "s",
-      "t"
-    ],
-    "preserved_other_script_glyphs": [
-      "uni0405",
-      "uni0430",
-      "uni0435",
-      "uni0441",
-      "uni0450",
-      "uni0451",
-      "uni0455"
     ],
     "advance_changes": 0,
     "text_cell_units": 600,

@@ -1,4 +1,4 @@
-"""Build GroundState Mono and Hito Mono 0.1 from a pinned Geist Mono source.
+"""Build Hito Mono 0.1 from a pinned Geist Mono source.
 
 Run: python3 build.py. Inputs and original licenses are in source/.
 The advance widths and mark attachment anchors remain those of Geist Mono.
@@ -139,11 +139,11 @@ def main():
     for weight,style in STYLES:
         original=instantiateVariableFont(TTFont(ROOT/'source/GeistMono-Variable.ttf'),{'wght':weight},inplace=True)
         original.save(ROOT/f'source/reference/GeistMono-{style}.ttf')
-        for family in ['GroundState Mono','Hito Mono']:
-            f=deepcopy(original);targets=GS_TARGETS|(HITO_TARGETS if family=='Hito Mono' else set())
+        for family in ['Hito Mono']:
+            f=deepcopy(original);targets=GS_TARGETS|HITO_TARGETS
             preserved=preserve_other_scripts(f,original,targets)
             groundstate(f)
-            if family=='Hito Mono':hito(f)
+            hito(f)
             remove_features(f,{'liga','ss11'})
             for n in f.getGlyphOrder():
                 if hasattr(f['glyf'][n],'program'):f['glyf'][n].program=Program()

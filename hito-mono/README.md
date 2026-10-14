@@ -1,26 +1,21 @@
-# GroundState Mono & Hito Mono — 0.1
+# Hito Mono — 0.1
 
-Two custom monospace families based on Geist Mono, designed as companions to GroundState Sans and Hito Sans.
+A monospace companion to Hito Sans, based on Geist Mono. Hito Mono adds subtly squared o/O/Q bowls, rounded-square dots, a raised H bridge, chamfered K/k feet, a lower A crossbar and narrower bars on I.
 
-| Family | Character |
-| --- | --- |
-| GroundState Mono | Angled G/r/t terminals, a lifted a foot, and related cuts in S/s/c/e/f/l. |
-| Hito Mono | The same underlying details, plus subtly squared o/O/Q bowls, rounded-square dots, raised H bridge, chamfered K/k feet, lower A crossbar, and narrower bars on I. |
-
-The details adapt the existing sans design language to a mono grid. They are newly edited Geist outlines, not outlines copied from Apple's fonts. Changes are intentionally subtle at reading sizes.
+GroundState fonts live in the separate [GroundState repository](https://github.com/herbstephens/GroundState). This package builds and distributes Hito Mono only; shared outline transformations remain part of its build.
 
 ## Included
 
-- Eight upright faces: Regular (400), Medium (500), Semibold (600), Bold (700) in each family.
+- Four upright faces: Regular (400), Medium (500), Semibold (600), Bold (700).
 - TTF for desktop installation; WOFF2 and WOFF for web embedding.
-- `brand-mono.css`: all eight web font declarations and example classes.
+- `brand-mono.css`: all four web font declarations and example classes.
 - `specimen.html`: offline specimen with editable sample text, size and weight controls, and light/dark mode. Keep it beside the CSS and fonts folder.
 - Three rendered proofs in `proofs/`: overview, source comparison, and small-size/accent checks.
 - Python build, validation and proof-rendering scripts; pinned upstream variable font; original licenses and provenance.
 
 ## Install
 
-On macOS, select the TTF files in `fonts/`, open them in Font Book, and install. Choose **GroundState Mono** or **Hito Mono** in your app. Restart apps if the families do not appear immediately.
+On macOS, select the TTF files in `fonts/`, open them in Font Book, and install. Choose **Hito Mono** in your app. Restart apps if the families do not appear immediately.
 
 Regular and Bold use standard style linking. Medium and Semibold have separate legacy family names for older applications, while modern applications can group all four weights under the typographic family.
 
@@ -30,7 +25,6 @@ Copy `brand-mono.css` and `fonts/` together, then load the stylesheet:
 
 ```html
 <link rel="stylesheet" href="brand-mono.css">
-<pre class="groundstate-mono">state: ready</pre>
 <code class="hito-mono">git commit -S</code>
 ```
 
@@ -59,9 +53,9 @@ The original slashed zero, barred capital I, and distinct lowercase l and numera
 
 `validation.json` records checks on the exported fonts:
 
-- 8 faces and all 3 export formats loaded successfully.
-- 72,200 printable-ASCII pair shaping checks; every character stays on the 600-unit grid.
-- 2,136 Latin NFC/NFD equivalence checks.
+- 4 faces and all 3 export formats loaded successfully.
+- 36,100 printable-ASCII pair shaping checks; every character stays on the 600-unit grid.
+- 1,068 Latin NFC/NFD equivalence checks.
 - Mark clearances and selected Latin/accented neighbor collisions checked against the source.
 - All original Unicode mappings and advances preserved.
 - Every intended base-glyph edit verified against the source.
@@ -82,12 +76,12 @@ python3 validate.py
 python3 render.py
 ```
 
-`render.py` uses DejaVu Sans for proof labels at `/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf`; adjust its `UI` variable on other systems. HarfBuzz-backed Pillow text rendering is needed for the comparison proof.
+`render.py` uses the bundled Hito Sans for proof labels. HarfBuzz-backed Pillow text rendering is needed for the comparison proof.
 
 ## Source and license
 
 Based on Geist Mono by the Geist Project Authors, from the official [vercel/geist-font repository](https://github.com/vercel/geist-font), pinned to the commit in `source/provenance.json`. The pinned variable font reports version 1.700.
 
-Both derivative families remain under **SIL Open Font License 1.1**. Commercial use, embedding and modification are permitted subject to the license. Preserve copyright and license notices when redistributing. The font software may not be sold by itself and must remain under OFL; documents and artwork made using it do not inherit that requirement. See `OFL.txt` and `source/AUTHORS.txt`.
+The derivative family remains under **SIL Open Font License 1.1**. Commercial use, embedding and modification are permitted subject to the license. Preserve copyright and license notices when redistributing. The font software may not be sold by itself and must remain under OFL; documents and artwork made using it do not inherit that requirement. See `OFL.txt` and `source/AUTHORS.txt`.
 
 The Python scripts in this package are licensed under MIT; see `LICENSE-BUILD.txt`.

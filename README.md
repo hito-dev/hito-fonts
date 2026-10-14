@@ -25,7 +25,7 @@ body { font-family: "Hito Sans", system-ui, sans-serif; }
 code, pre { font-family: "Hito Mono", ui-monospace, monospace; }
 ```
 
-Open `hito-sans/specimen.html` or `hito-mono/specimen.html` to inspect the families locally. Sans includes outlined and editable wordmarks. Mono retains the companion GroundState Mono fonts because its shared build, validation and comparison specimen use both families; use the HitoMono files for Hito products.
+Open `hito-sans/specimen.html` or `hito-mono/specimen.html` to inspect the families locally. Sans includes outlined and editable wordmarks. GroundState fonts are maintained in the separate [GroundState repository](https://github.com/herbstephens/GroundState). Hito Mono includes only the four Hito weights; Sans retains its exact GroundState Sans source inputs for rebuilding.
 
 ## Build and validate
 
@@ -34,12 +34,12 @@ Run commands from the relevant family folder. Use a separate Python virtual envi
 - [Hito Sans build and validation](hito-sans/README.md#rebuild)
 - [Hito Mono build and validation](hito-mono/README.md#rebuild)
 
-The scripts use font inputs kept in `source/`. Rendering scripts currently reference a Linux DejaVu Sans path for proof labels; adjust that path on macOS or Windows as described in the package documentation. Existing proof images and validation reports were imported with the source packages, not regenerated during repository setup.
+The scripts use font inputs kept in `source/`. The Sans rendering script references a Linux DejaVu Sans path for proof labels; adjust it on other systems as described in its README. Mono uses the bundled Hito Sans for labels. Mono proofs and validation were regenerated for the Hito-only package; Sans reports were imported with its source package.
 
 ## Licence
 
 Font software is licensed under **SIL Open Font License 1.1**; see [LICENSE](LICENSE). Retain each family's copyright and licence notices when redistributing:
 
-- Hito Sans derives from GroundState Sans and [Inter by Rasmus Andersson and the Inter Project Authors](https://github.com/rsms/inter). See [hito-sans/OFL.txt](hito-sans/OFL.txt).
+- Hito Sans derives from [GroundState Sans](https://github.com/herbstephens/GroundState) and [Inter by Rasmus Andersson and the Inter Project Authors](https://github.com/rsms/inter). See [hito-sans/OFL.txt](hito-sans/OFL.txt).
 - Hito Mono derives from Geist Mono. See [hito-mono/OFL.txt](hito-mono/OFL.txt) and the upstream notices in `hito-mono/source/`.
 - Mono's original build/validation scripts and specimen have the separate MIT terms in [hito-mono/LICENSE-BUILD.txt](hito-mono/LICENSE-BUILD.txt). The root font licence does not replace that notice.

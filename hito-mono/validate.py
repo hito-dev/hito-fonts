@@ -49,7 +49,7 @@ class Font:
 
 def main():
     results=[];failures=[]
-    samples=['GroundState Mono','hito.ai hitokey HitoKey HitoAI',
+    samples=['Hito Mono','hito.ai hitokey HitoKey HitoAI',
       'Il1| O0Q 2Z 5S 6G 8B rn m vv w',
       'const approve = (key) => key.sign(hash);',
       '!= == === !== <= >= -> => :: && || ++ -- // /* */',
