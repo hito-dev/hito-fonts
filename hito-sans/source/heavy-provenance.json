@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/herbstephens/GroundState",
+  "revision": "8e3a4a6cf336c428ed857395d01f64d723ca81fe",
+  "assets": [
+    {
+      "source": "apps/fonts/groundstate-sans/fonts/GroundStateSans-Bold.ttf",
+      "sha256": "e73ef34ee7bf2a8961a959aca12f85343bf9e32dd3b9d55bcdcd0bd485882caf"
+    },
+    {
+      "source": "apps/fonts/groundstate-sans/fonts/GroundStateSans-Black.ttf",
+      "sha256": "360aa4b0805143ee60ef606ff7d78a3d810e1b60e3a3387095b1a448fcc962ce"
+    }
+  ]
+}
