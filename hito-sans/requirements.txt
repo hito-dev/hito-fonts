@@ -1,0 +1,6 @@
+fonttools==4.60.2
+brotli==1.2.1
+Pillow==11.3.0
+uharfbuzz==0.51.7
+shapely==2.0.7
+numpy==2.0.2

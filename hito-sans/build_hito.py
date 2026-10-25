@@ -9,7 +9,7 @@ from fontTools.pens.recordingPen import DecomposingRecordingPen
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'source'))
 from groundstate_build import shift,replace_points,base_root,add_kerning
-STYLES=[(400,'Regular'),(500,'Medium'),(600,'Semibold')]
+STYLES=[(400,'Regular'),(500,'Medium'),(600,'Semibold'),(700,'Bold'),(800,'ExtraBold'),(900,'Black')]
 
 def square_bowl(g,start,end,amount=.12):
     """Push diagonal off-curve controls toward corners, retaining extrema."""
@@ -59,9 +59,13 @@ def anchors_for_I(f,dx):
             if lookup.LookupType==9:visit(st.ExtSubTable,st.ExtensionLookupType)
             else:visit(st,lookup.LookupType)
 
-def build():
-    reports=[]
-    for weight,style in STYLES:
+def build(styles=None):
+    selected=[item for item in STYLES if styles is None or item[1] in styles]
+    # Partial builds preserve existing binaries and their provenance records.
+    previous=ROOT/'design-changes.json'
+    reports=json.loads(previous.read_text()) if styles is not None and previous.exists() else []
+    reports=[entry for entry in reports if entry['style'] not in {style for _,style in selected}]
+    for weight,style in selected:
         src=ROOT/f'source/GroundStateSans-{style}.ttf'
         old=TTFont(src);f=deepcopy(old);glyf=f['glyf'];gs=old.getGlyphSet()
         targets={'o','O','Q','H','K','k','A','y','I','i','j','period'}
@@ -132,7 +136,12 @@ def build():
         for ext,flavor in [('ttf',None),('woff','woff'),('woff2','woff2')]:
             f.flavor=flavor;f.save(ROOT/f'fonts/HitoSans-{style}.{ext}')
         reports.append({'style':style,'weight':weight,'source_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'hito_modified_glyphs':sorted(targets),'new_glyph':'hito.dot','preserved_non_latin_glyphs':len(set(preserved)),'pair_deltas':deltas,'expanded_custom_pairs':pairs,'I_advance_delta':128,'I_anchor_shift':64})
+    reports.sort(key=lambda entry: entry['weight'])
     (ROOT/'design-changes.json').write_text(json.dumps(reports,indent=2))
     print(json.dumps(reports,indent=2))
-if __name__=='__main__':build()
+if __name__=='__main__':
+    import argparse
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--styles', nargs='+', choices=[style for _,style in STYLES])
+    build(parser.parse_args().styles)
 

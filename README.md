@@ -4,7 +4,7 @@ Hito Sans and Hito Mono for Hito apps, websites and documents. This repository c
 
 | Family | Weights | Formats | Package |
 | --- | --- | --- | --- |
-| Hito Sans 0.1 | Regular 400, Medium 500, Semibold 600 | TTF, WOFF, WOFF2 | [hito-sans](hito-sans/) |
+| Hito Sans 0.1 | Regular 400, Medium 500, Semibold 600, Bold 700, ExtraBold 800, Black 900 | TTF, WOFF, WOFF2 | [hito-sans](hito-sans/) |
 | Hito Mono 0.1 | Regular 400, Medium 500, Semibold 600, Bold 700 | TTF, WOFF, WOFF2 | [hito-mono](hito-mono/) |
 
 These are development releases. The family READMEs describe design changes, checks and known limitations. No GitHub release or version tag has been created by this import.

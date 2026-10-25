@@ -1,6 +1,6 @@
 # Hito Sans 0.1
 
-A tailored branch of GroundState Sans 0.2 for **hito.ai**, **hitokey**, **HitoKey**, and **HitoAI**. Three weights: Regular 400, Medium 500, Semibold 600.
+A tailored branch of GroundState Sans 0.2 for **hito.ai**, **hitokey**, **HitoKey**, and **HitoAI**. Six weights: Regular 400, Medium 500, Semibold 600, Bold 700, ExtraBold 800, Black 900.
 
 ## Direction
 
@@ -19,7 +19,7 @@ The wider capital I receives adjusted advances, precomposed accent placement, an
 
 ## Files
 
-- fonts/: nine font files — three weights in TTF, WOFF, WOFF2.
+- fonts/: eighteen font files — six weights in TTF, WOFF, WOFF2.
 - hito-sans.css: ready-to-use web font declarations.
 - specimen.html: offline interactive specimen with size, weight, and kerning controls.
 - hito-sans-specimen.png: all four requested names plus comparison with GroundState Sans.
@@ -63,11 +63,12 @@ All font formats reopen successfully and preserve the original character map. Ha
 
 Geometric checks use sampled curves and do not prove universal readability or optimal spacing. The build retains inherited contour overlaps in some letters. Native Windows/macOS browser rendering has not been tested. The preview HTML is provided for local review.
 
-This release has three static text-size weights. It does not include true italics or new variable optical-size masters. Non-Latin forms are preserved where affected components are shared; they are not a newly designed Hito script system.
+This release has six static text-size weights. It does not include true italics or new variable optical-size masters. Non-Latin forms are preserved where affected components are shared; they are not a newly designed Hito script system.
 
 ## Rebuild
 
-Python dependencies: fonttools, brotli, Pillow, uharfbuzz, shapely.
+Python dependencies are pinned in `requirements.txt`. Install them in a virtual
+environment with `python -m pip install -r requirements.txt`.
 
     python build_hito.py
     python validate_hito.py
@@ -87,3 +88,23 @@ Product context reviewed:
 https://hito.ai/
 https://hito.ai/key/
 
+
+## Heavy weights
+
+Bold 700, ExtraBold 800 and Black 900 use actual GroundState Sans weight-axis instances, with
+all Hito outline and kerning edits applied. They are not synthetic emboldening.
+Exact parent inputs and hashes are recorded in `source/heavy-provenance.json`.
+Use Black for a compact, emphatic wordmark and Bold for heavier short headings;
+existing text weights and Semibold wordmark assets remain unchanged.
+
+To rebuild only the added weights without rewriting existing binaries:
+
+    python build_hito.py --styles Bold ExtraBold Black
+    python validate_hito.py
+
+The interactive specimen includes all six weights. Existing PNG specimens and
+outlined wordmark SVGs remain the original three-weight/Semibold proofs.
+
+The 800 parent can be regenerated with `python build_extrabold_source.py`.
+Its variable source and GroundState build recipe are bundled and pinned by hashes
+in `source/heavy-provenance.json`.

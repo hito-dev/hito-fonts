@@ -15,6 +15,8 @@ def main():
         for ext in ['woff','woff2']:
             f=TTFont(ROOT/f'fonts/HitoSans-{style}.{ext}');assert f.getBestCmap()==cmap
         assert new.f['name'].getDebugName(1)=='Hito Sans'
+        assert new.f['OS/2'].usWeightClass == change['weight']
+        assert new.f['name'].getDebugName(6) == 'HitoSans-' + style
         accents=[]
         for cp in cmap:
             c=chr(cp);nfd=unicodedata.normalize('NFD',c)
@@ -60,8 +62,9 @@ def main():
             assert all(n!='.notdef' for n,*_ in shape)
             words[text]={'advance_units':sum(x[1] for x in shape),'collision_area':round(new.collision(text),3)}
         reports.append({'style':style,'format_checks':['TTF','WOFF','WOFF2'],'glyph_count':len(new.names),'latin_accent_cases':len(accents),'pair_cases':len(chars)**2,'new_pair_intersections':collisions,'custom_kern_deltas':kern,'above_accent_checks':above_count,'above_accent_min_gap':round(min(clearance),2),'new_invalid_contours':new_invalid,'wordmarks':words})
-    out={'family':'Hito Sans','version':'0.1','tests':reports,'failures':failures,'limits':['Sampled curves for approximate geometric checks','No native Windows/macOS browser validation','Three static weights at text optical size; no italics or variable masters','Geometric clearance and visual review do not prove accessibility or recognition']}
+    out={'family':'Hito Sans','version':'0.1','tests':reports,'failures':failures,'limits':['Sampled curves for approximate geometric checks','No native Windows/macOS browser validation','Six static weights at text optical size; no italics or variable masters','Geometric clearance and visual review do not prove accessibility or recognition']}
     (ROOT/'validation.json').write_text(json.dumps(out,indent=2,ensure_ascii=False))
     print(json.dumps(out,indent=2,ensure_ascii=False))
+    if failures: raise SystemExit('Font validation failed; inspect validation.json')
 if __name__=='__main__':main()
 
