@@ -9,6 +9,24 @@
     {
       "source": "apps/fonts/groundstate-sans/fonts/GroundStateSans-Black.ttf",
       "sha256": "360aa4b0805143ee60ef606ff7d78a3d810e1b60e3a3387095b1a448fcc962ce"
+    },
+    {
+      "source": "apps/fonts/groundstate-sans/source/Inter.ttf",
+      "bundled_as": "Inter-variable.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031"
+    },
+    {
+      "source": "apps/fonts/groundstate-sans/build_v02.py",
+      "bundled_as": "groundstate_heavy_build.py",
+      "sha256": "11eb20cea1e90ea2fc0d005974099a2a9b78d883dabf2c09376ce7e2da19406d"
     }
-  ]
+  ],
+  "generated_parent": {
+    "file": "GroundStateSans-ExtraBold.ttf",
+    "command": "python build_extrabold_source.py",
+    "axes": {
+      "wght": 800,
+      "opsz": 14
+    }
+  }
 }

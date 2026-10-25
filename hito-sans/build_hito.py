@@ -9,7 +9,7 @@ from fontTools.pens.recordingPen import DecomposingRecordingPen
 ROOT=Path(__file__).resolve().parent
 sys.path.insert(0,str(ROOT/'source'))
 from groundstate_build import shift,replace_points,base_root,add_kerning
-STYLES=[(400,'Regular'),(500,'Medium'),(600,'Semibold'),(700,'Bold'),(900,'Black')]
+STYLES=[(400,'Regular'),(500,'Medium'),(600,'Semibold'),(700,'Bold'),(800,'ExtraBold'),(900,'Black')]
 
 def square_bowl(g,start,end,amount=.12):
     """Push diagonal off-curve controls toward corners, retaining extrema."""
