@@ -1,6 +1,6 @@
 {
   "family": "Hito Sans",
-  "version": "0.1",
+  "version": "0.101",
   "tests": [
     {
       "style": "Regular",
@@ -61,6 +61,18 @@
         },
         "hito": {
           "advance_units": 3561,
+          "collision_area": 0.0
+        },
+        "Clarity": {
+          "advance_units": 6442,
+          "collision_area": 0.0
+        },
+        "Wallet": {
+          "advance_units": 6140,
+          "collision_area": 0.0
+        },
+        "Il1": {
+          "advance_units": 2083,
           "collision_area": 0.0
         }
       }
@@ -125,6 +137,18 @@
         "hito": {
           "advance_units": 3638,
           "collision_area": 0.0
+        },
+        "Clarity": {
+          "advance_units": 6577,
+          "collision_area": 0.0
+        },
+        "Wallet": {
+          "advance_units": 6266,
+          "collision_area": 0.0
+        },
+        "Il1": {
+          "advance_units": 2131,
+          "collision_area": 0.0
         }
       }
     },
@@ -187,6 +211,18 @@
         },
         "hito": {
           "advance_units": 3716,
+          "collision_area": 0.0
+        },
+        "Clarity": {
+          "advance_units": 6713,
+          "collision_area": 0.0
+        },
+        "Wallet": {
+          "advance_units": 6390,
+          "collision_area": 0.0
+        },
+        "Il1": {
+          "advance_units": 2179,
           "collision_area": 0.0
         }
       }
@@ -251,6 +287,18 @@
         "hito": {
           "advance_units": 3792,
           "collision_area": 0.0
+        },
+        "Clarity": {
+          "advance_units": 6847,
+          "collision_area": 0.0
+        },
+        "Wallet": {
+          "advance_units": 6516,
+          "collision_area": 0.0
+        },
+        "Il1": {
+          "advance_units": 2227,
+          "collision_area": 0.0
         }
       }
     },
@@ -314,6 +362,18 @@
         "hito": {
           "advance_units": 3887,
           "collision_area": 0.0
+        },
+        "Clarity": {
+          "advance_units": 7014,
+          "collision_area": 0.0
+        },
+        "Wallet": {
+          "advance_units": 6667,
+          "collision_area": 0.0
+        },
+        "Il1": {
+          "advance_units": 2286,
+          "collision_area": 0.0
         }
       }
     },
@@ -376,6 +436,18 @@
         },
         "hito": {
           "advance_units": 3990,
+          "collision_area": 0.0
+        },
+        "Clarity": {
+          "advance_units": 7192,
+          "collision_area": 0.0
+        },
+        "Wallet": {
+          "advance_units": 6834,
+          "collision_area": 0.0
+        },
+        "Il1": {
+          "advance_units": 2349,
           "collision_area": 0.0
         }
       }

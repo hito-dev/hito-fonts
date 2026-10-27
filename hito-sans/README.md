@@ -1,4 +1,4 @@
-# Hito Sans 0.1
+# Hito Sans 0.101
 
 A tailored branch of GroundState Sans 0.2 for **hito.ai**, **hitokey**, **HitoKey**, and **HitoAI**. Six weights: Regular 400, Medium 500, Semibold 600, Bold 700, ExtraBold 800, Black 900.
 
@@ -13,6 +13,7 @@ The design retains the parent font's double-storey a, angled terminals, and curv
 - Matched small chamfers on K/k.
 - A lower A crossbar and refined y exit.
 - A compact barred capital I, distinguishing HitoAI and I/l/1.
+- A shorter, softer lowercase l foot for words such as Clarity, applied to all six weights and its matching alternate.
 - Twenty added kerning adjustments focused on the Hito names and adjacent pairs. Accent variants inherit applicable pair values.
 
 The wider capital I receives adjusted advances, precomposed accent placement, and dynamic mark anchors. Inter's optional I alternates remain available in their original form; enabling alternate OpenType features may select other shapes.
@@ -22,7 +23,7 @@ The wider capital I receives adjusted advances, precomposed accent placement, an
 - fonts/: eighteen font files — six weights in TTF, WOFF, WOFF2.
 - hito-sans.css: ready-to-use web font declarations.
 - specimen.html: offline interactive specimen with size, weight, and kerning controls.
-- hito-sans-specimen.png: all four requested names plus comparison with GroundState Sans.
+- hito-sans-specimen.png: brand names and Clarity Wallet beside GroundState Sans.
 - hito-reading-accents.png: reading sizes and accent samples.
 - wordmarks/: six names, each as an outlined SVG and editable-text SVG.
 - build_hito.py, render_hito.py, validate_hito.py: reproducible build and validation.
