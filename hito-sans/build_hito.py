@@ -40,14 +40,6 @@ def rounded_box(x0,y0,x1,y1,r):
     out=TTGlyphPen(None);rec.replay(ReverseContourPen(out))
     return out.glyph()
 
-def soften_l_foot(g):
-    """Retain the curved exit while reducing its reach past the stem."""
-    stem_right=g.coordinates[5][0]
-    for i in range(8,16):
-        x,y=g.coordinates[i]
-        if x>stem_right:
-            g.coordinates[i]=(stem_right+round((x-stem_right)*.7),y)
-
 def dependency(f,name,targets,seen=None):
     seen=set() if seen is None else seen
     if name in seen:return False
@@ -76,7 +68,7 @@ def build(styles=None):
     for weight,style in selected:
         src=ROOT/f'source/GroundStateSans-{style}.ttf'
         old=TTFont(src);f=deepcopy(old);glyf=f['glyf'];gs=old.getGlyphSet()
-        targets={'o','O','Q','H','K','k','A','y','I','i','j','period','l','l.ss02'}
+        targets={'o','O','Q','H','K','k','A','y','I','i','j','period'}
         preserved=[]
         # Preserve non-Latin glyphs that reuse any affected Latin component.
         for cp,name in old.getBestCmap().items():
@@ -108,8 +100,6 @@ def build(styles=None):
         for i in [14,15,16,17]:shift(glyf['A'],i,0,-18)
         # The y exit echoes the angle of the inherited t/l feet.
         shift(glyf['y'],0,14,2);shift(glyf['y'],1,0,6)
-        # Shorten the inherited l hook, including its matching alternate.
-        for name in ['l','l.ss02']:soften_l_foot(glyf[name])
         # Compact barred I to make HitoAI and I/l/1 unambiguous.
         oldw=old['hmtx']['I'][0];neww=oldw+128;center=neww/2
         g=deepcopy(old['glyf']['I.1'])
@@ -138,8 +128,8 @@ def build(styles=None):
             gg.recalcBounds(glyf)
             if hasattr(gg,'xMin'):
                 w,_=f['hmtx'][name];f['hmtx'][name]=(w,gg.xMin)
-        f['head'].fontRevision=.101
-        names={1:'Hito Sans',2:style,3:f'HitoSans-{style}-0.101',4:f'Hito Sans {style}',5:'Version 0.101; GroundState Sans / Inter derivative',6:f'HitoSans-{style}',16:'Hito Sans',17:style}
+        f['head'].fontRevision=.100
+        names={1:'Hito Sans',2:style,3:f'HitoSans-{style}-0.100',4:f'Hito Sans {style}',5:'Version 0.100; GroundState Sans / Inter derivative',6:f'HitoSans-{style}',16:'Hito Sans',17:style}
         for rec in f['name'].names:
             if rec.nameID in names:rec.string=names[rec.nameID].encode(rec.getEncoding(),errors='replace')
         f['name'].setName('Hito Sans. Tailored for Hito, hito.ai, HitoKey and HitoAI. Derived from GroundState Sans 0.2 and Inter. SIL Open Font License 1.1.',10,3,1,0x409)
